@@ -1,41 +1,11 @@
 import { PagesFunction, EventContext
 } from "@cloudflare/workers-types";
 import { XMLParser } from "fast-xml-parser";
+import { errorMessage } from "../../src/errorMessage";
+import { handleJsonp } from "../../src/handleJsonp";
 
 interface Env {}
 
-function handleJsonp(ctx: EventContext<Env, any, any>, data: unknown) {
-
-    const jsonStr = JSON.stringify(data); //, null, 2);
-    let body:string;
-    let headers = {}; 
-
-    const me = new URL(ctx.request.url);
-    let callback = me.searchParams.get("callback");
-    if (callback) {
-        headers["Content-Type"] = "application/javascript";
-        body = `${callback}(${jsonStr})`;
-    } else {
-        headers["Content-Type"] = "application/json";
-        body = jsonStr;
-    }
-
-    return new Response(body, {
-        headers: {
-            ...headers,
-            "Cache-Control": "no-store, max-age=0",
-            "X-Robots-Tag": "nofollow, noindex",
-        },
-    });
-
-}
-
-function errorMessage(err:unknown):string {
-    if (err instanceof Error) {
-        return err.message;
-    }
-    return String(err);
-}
 
 type TreeItem = {
     id: string;         // url if hasEntry, otherwise localpath
