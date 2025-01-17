@@ -17,23 +17,22 @@ h1: Sitemap Style
 
 <h2>How do I use it?</h2>
 
-<p>Add a line to the top of your <code>sitemap.xml</code> file with one of the styles here on <b>Sitemap Style</b>:</p>
-
-<p><code>&lt;?xml-stylesheet type="text/xsl" href="https://www.sitemap.style/xslt/vanilla-water.xslt" ?&gt;</code></p>
-
+<ul>
+    <li>Download one of the <a href="#available_styles">available styles</a> and save it as <code>sitemap.xslt</code> in the same directory as your <code>sitemap.xml</code> file<br/>
+        Note that the extension is <code>.xslt</code> and NOT <code>.xml</code>!<br><br></li>
+    <li>
+        Add a line to the top of your <code>sitemap.xml</code> file:<br>
+        <code>&lt;?xml-stylesheet type="text/xsl" href="/sitemap.xslt" ?&gt;</code>
+</li>
+</ul>
 <!-- LATER: examples with and w/o xml dtd -->
 
 <h2 id="available_styles">Available styles</h2>
 
 <ul>
-    <li><a href="/xslt/vanilla.xslt">vanilla.xslt</a> - just a plain bullet list of pages</li>
-    <li>Vanilla + classless: still a plain list, but with a classless CSS files
-        <ul>
-            <li><a href="/xslt/vanilla-picnic.xslt">vanilla-picnic.xslt</a> - with <a href="https://picnicss.com/">picnic.css</a></li>
-            <li><a href="/xslt/vanilla-pico.xslt">vanilla-pico.xslt</a> - with <a href="https://picocss.com/">pico.css</a></li>
-            <li><a href="/xslt/vanilla-pure.xslt">vanilla-pure.xslt</a> - with <a href="https://purecss.io/">pure.css</a></li>
-            <li><a href="/xslt/vanilla-water.xslt">vanilla-water.xslt</a> - with <a href="https://watercss.kognise.dev/">water.css</a></li>
-        </ul>
+    <li><a href="/xslt/plain.xslt">plain.xslt</a> - just a plain bullet list of pages with classless CSS.</li>
+    <li><a href="/xslt/linked.xslt">linked.xslt</a> - same as plain, but with a link to the Sitemap Viewer.</li>
+    <li><a href="/xslt/redirect.xslt">redirect.xslt</a> - a redirect to the Sitemap Viewer.</li>
     </li>
 </ul>
 <h2>Tech details</h2>

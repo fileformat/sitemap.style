@@ -14,10 +14,6 @@
   url: "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap"
   tags: [ "sitemap" ]
 
-- title: "Mozilla Developer Network: XSLT reference"
-  url: "https://developer.mozilla.org/en-US/docs/Web/XSLT"
-  tags: [ "xslt" ]
-
-- title: "W3C: Official XSLT 3.0 specification"
-  url: "https://www.w3.org/TR/xslt-30/"
+- title: "XML Style: XSLT links and resources"
+  url: "https://www.xml.style/"
   tags: [ "xslt" ]

@@ -1,0 +1,50 @@
+---
+title: Sitemap Viewer Integration
+---
+
+<p>
+    The <a href="https://view.sitemap.style/">Sitemap Viewer</a> is designed to be easily integrated into any website.
+</p>
+
+<p>These are the parameters that you can pass to customize it:</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>url</code></td>
+            <td>The full URL of your <code>sitemap.xml</code> file. <b>(required)</b></td>
+        </tr>
+        <tr>
+            <td><code>exit</code></td>
+            <td>The URL that links back to your website. Optional: it will default to the root of the <code>url</code>
+                parameter.</td>
+        </tr>
+        <tr>
+            <td><code>sort</code></td>
+            <td>How the entries in the tree should be sorted: one of:
+                <ul>
+                    <li><code>name</code> - by name (default)</li>
+                    <li><code>url</code> - by URL</li>
+                    <li><code>dirfirst</code> - by name, but directories first</li>
+                    <li><code>original</code> - in the order they appear in the <code>sitemap.xml</code> file</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><code>transform</code></td>
+            <td>How page names should be transformed for display in the tree: one of:
+                <ul>
+                    <li><code>initialcap</code> - Uppercase the first letter, leave everything else unchanged (default)</li>
+                    <li><code>original</code> - in the order they appear in the <code>sitemap.xml</code> file</li>
+                    <li><code>titlecase</code> - Uppercase the first letter of each word, lowercase the rest of each word</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

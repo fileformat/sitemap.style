@@ -7,4 +7,5 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-screen -c .screenrc
+jekyll serve --livereload --verbose --watch --source=docs --destination=dist --port 5000
+
