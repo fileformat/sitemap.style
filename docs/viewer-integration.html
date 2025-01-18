@@ -1,12 +1,13 @@
 ---
 title: Sitemap Viewer Integration
 ---
-
 <p>
-    The <a href="https://view.sitemap.style/">Sitemap Viewer</a> is designed to be easily integrated into any website.
+    I designed the <a href="https://view.sitemap.style/">Sitemap Viewer</a> to be easily integrated into any website.
 </p>
 
-<p>These are the parameters that you can pass to customize it:</p>
+<p>
+    These are the parameters that you can pass to customize it:
+</p>
 
 <table class="table table-bordered">
     <thead>
@@ -27,7 +28,7 @@ title: Sitemap Viewer Integration
         </tr>
         <tr>
             <td><code>sort</code></td>
-            <td>How the entries in the tree should be sorted: one of:
+            <td>How the entries in the tree should be sorted.  One of:
                 <ul>
                     <li><code>name</code> - by name (default)</li>
                     <li><code>url</code> - by URL</li>
@@ -38,12 +39,34 @@ title: Sitemap Viewer Integration
         </tr>
         <tr>
             <td><code>transform</code></td>
-            <td>How page names should be transformed for display in the tree: one of:
+            <td>How page names should be transformed for display in the tree.  One of:
                 <ul>
                     <li><code>initialcap</code> - Uppercase the first letter, leave everything else unchanged (default)</li>
                     <li><code>original</code> - in the order they appear in the <code>sitemap.xml</code> file</li>
                     <li><code>titlecase</code> - Uppercase the first letter of each word, lowercase the rest of each word</li>
                 </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><code>showmode</code></td>
+            <td>Set to <code>1</code>to show the light/dark mode switcher</td>
+        </tr>
+        <tr>
+            <td><code>showlanguage</code></td>
+            <td>Set to <code>1</code>to show the language switcher</td>
+        </tr>
+        <tr>
+            <td><code>showexit</code></td>
+            <td>
+                Set to <code>1</code>to show exit toolbar button (goes to the URL specified by 
+                <code>exit</code>)
+            </td>
+        </tr>
+        <tr>
+            <td><code>showdebug</code></td>
+            <td>
+                Set to <code>1</code>to a toolbar button to view the logs.  You do not want to have 
+                this on in production, but it can be useful when troubleshooting
             </td>
         </tr>
     </tbody>
