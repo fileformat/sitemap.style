@@ -4,7 +4,7 @@
 
 exclude: [ "CNAME" ]
 production_url: https://www.sitemap.style
-sharing_targets: [ "reddit", "pinboard" ]
+sharing_targets: [ "reddit", "hn", "pinboard" ]
 title: Sitemap Style
 markdown: kramdown
 plugins:
