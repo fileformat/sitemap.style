@@ -17,15 +17,32 @@ h1: Sitemap Style
 
 <h2>How do I use it?</h2>
 
-<ul>
-    <li>Download one of the <a href="#available_styles">available styles</a> and save it as <code>sitemap.xslt</code> in the same directory as your <code>sitemap.xml</code> file<br/>
-        Note that the extension is <code>.xslt</code> and NOT <code>.xml</code>!<br><br></li>
-    <li>
-        Add a line to the top of your <code>sitemap.xml</code> file:<br>
-        <code>&lt;?xml-stylesheet type="text/xsl" href="/sitemap.xslt" ?&gt;</code>
-</li>
-</ul>
-<!-- LATER: examples with and w/o xml dtd -->
+<p>
+    Download one of the <a href="#available_styles">available styles</a> and save it as <code>sitemap.xslt</code> in the same directory as your <code>sitemap.xml</code> file<br/>
+    Note that the extension is <code>.xslt</code> and NOT <code>.xml</code>!<br><br></li>
+</p>
+
+<p>
+    Add it to your <code>sitemap.xml</code>file.  At the top of the file, it will look like:
+<pre class="m-4 p-3 bg-light border rounded">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset ...&gt;
+...
+</pre>
+</p>
+
+<p>
+    Add a line in the middle so it looks like:
+<pre class="m-4 p-3 bg-light border rounded">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<b title="This is the added line">&lt;?xml-stylesheet type="text/xsl" href="my-downloaded-file.xslt"?&gt;</b>
+&lt;urlset ...&gt;
+...
+</pre>
+</p>
+
+<p><a href="https://www.xml.style/index.html#warn">Troubleshooting</a></p>
+
 
 <h2 id="available_styles">Available styles</h2>
 
@@ -34,6 +51,8 @@ h1: Sitemap Style
     <li><a href="/xslt/linked.xslt">linked.xslt</a> - same as plain, but with a link to the <a href="https://view.sitemap.style/">Sitemap Viewer</a>.</li>
     <li><a href="/xslt/redirect.xslt">redirect.xslt</a> - a JavaScript redirect to the <a href="https://view.sitemap.style/">Sitemap Viewer</a> with fallback to plain.</li>
 </ul>
+
+<p><a href="https://github.com/fileformat/sitemap.style/tree/main/docs/xslt">Source</a></p>
 
 <h2>Links</h2>
 <ul>
