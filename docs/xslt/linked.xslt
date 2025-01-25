@@ -22,7 +22,7 @@
                         var viewPara = document.getElementById("viewpara");
                         viewPara.style.display = "block";
                         var viewLink = document.getElementById("viewlink");
-                        viewLink.href = `https://view.sitemap.style/view.html?url=${encodeURIComponent(window.location.href)}`;
+                        viewLink.href = `https://sitemap-viewer.fileformat.info/view.html?url=${encodeURIComponent(window.location.href)}`;
                     });
                 </script>
             </head>

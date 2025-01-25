@@ -19,7 +19,7 @@
                 <link rel="stylesheet" href="https://www.sitemap.style/css/water.min.css" />
                 <script>
                     window.addEventListener('load', function() {                        
-                        window.location.href = `https://view.sitemap.style/view.html?url=${encodeURIComponent(window.location.href)}`;
+                        window.location.href = `https://sitemap-viewer.fileformat.info/view.html?url=${encodeURIComponent(window.location.href)}`;
                     });
                 </script>
             </head>
