@@ -47,9 +47,9 @@ h1: Sitemap Style
 <h2 id="available_styles">Available styles</h2>
 
 <ul>
-    <li><a href="/xslt/plain.xslt">plain.xslt</a> - just a plain bullet list of pages with classless CSS.</li>
-    <li><a href="/xslt/linked.xslt">linked.xslt</a> - same as plain, but with a link to the <a href="https://sitemap-viewer.fileformat.info/">Sitemap Viewer</a>.</li>
-    <li><a href="/xslt/redirect.xslt">redirect.xslt</a> - a JavaScript redirect to the <a href="https://sitemap-viewer.fileformat.info/">Sitemap Viewer</a> with fallback to plain.</li>
+    <li class="py-1"><a href="/xslt/plain.xslt">plain.xslt</a> - just a plain bullet list of pages with classless CSS.</li>
+    <li class="py-1"><a href="/xslt/linked.xslt">linked.xslt</a> - same as plain, but with a link to the <a href="https://sitemap-viewer.fileformat.info/">Sitemap Viewer</a>. <a class="ms-2 btn btn-sm btn-outline-primary" href="https://resolve.rs/sitemap.xml">Demo</a></li>
+    <li class="py-1"><a href="/xslt/redirect.xslt">redirect.xslt</a> - a JavaScript redirect to the <a href="https://sitemap-viewer.fileformat.info/">Sitemap Viewer</a> with fallback to plain.</li>
 </ul>
 
 <p><a href="https://github.com/fileformat/sitemap.style/tree/main/docs/xslt">Source</a></p>
@@ -57,7 +57,7 @@ h1: Sitemap Style
 <h2>Links</h2>
 <ul>
     {%- for link in site.data.links %}
-    <li><a href="{{link.url}}">{{link.title}}</a></li>
+    <li class="py-1"><a href="{{link.url}}">{{link.title}}</a></li>
     {% endfor %}
 </ul>
 {% include share.html %}

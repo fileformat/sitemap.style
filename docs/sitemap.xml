@@ -4,7 +4,7 @@ title: Sitemap
 noindex: true
 layout: none
 ---
-<?xml-stylesheet type="text/xsl" href="/xslt/vanilla.xslt" ?>
+<?xml-stylesheet type="text/xsl" href="/xslt/linked.xslt" ?>
 <urlset
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9"
