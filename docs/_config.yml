@@ -3,6 +3,7 @@
 #
 
 exclude: [ "CNAME" ]
+include: [ "_headers" ]
 production_url: https://www.sitemap.style
 sharing_targets: [ "reddit", "hn", "pinboard" ]
 title: Sitemap Style
